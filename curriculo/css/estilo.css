@@ -4,7 +4,10 @@
     padding: 0; 
 }
 
-
+.card, .img{
+    width: 800px;
+   margin-left: 9em;
+}
 .rounded-circle{
     width: 300px;
 }
@@ -28,36 +31,14 @@ header{
     width: auto;  
 }
 
- .posicao{ 
-  
-    position: absolute;
-    top: 95.2em;
-    
+.posicao,.posicao02, .posicao03, .posicao04{
+    display: none;
 }
 
-.posicao02{ 
-   
-    position: absolute;
-    top: 95.2em;
-    left: 25em;
-}
-
-.posicao03{ 
- 
-    position: absolute;
-    top:95.2em;
-    left: 52em;
-}
-
-.posicao04{ 
- 
-    position: absolute;
-    top: 95.2em;
-    left: 73.9em;
-}
 
 header{
-    background-color: #9ec5c3;   
+    background-color: #9ec5c3;
+    
 }
 
 main{
@@ -97,10 +78,11 @@ h3{
 .borda {
     border-bottom: 5px solid #072247  ;
     padding-bottom: 0.5em;
+   
 }
 
 .espacamento{
-    padding-top: 3em;
+    padding-top: 1em;
    
 }
 
@@ -128,12 +110,72 @@ footer div{
     margin-left: 1em;
 }
 
-@media (max-width: 657px) {
+/* Breakpoints */
 
-    figure .img{ 
-        position: absolute;
-        top: 20em;
+@media (max-width: 1024px) {
+    p, ul li,.subtitulo,td ,.navbar-brand{
+        font-size: 1.7em;
     }
+
+    nav a{
+        font-size: 1.2em;
+    }
+
+    h2{
+        font-size: 2.5em; 
+    }
+    h3{
+        font-size: 2em;  
+    }
+  
+    h1{
+        padding-bottom: 5em;
+    }
+
+      .posicao{
+        position: absolute;
+        top: 140em;
+        left: 0.9em;
+       }
+
+       .posicao02{
+        position: absolute;
+        top: 140em;
+        left: 33em;
+       }
+
+       .posicao03{
+       display: none;
+     }
+}
+
+@media (max-width: 768px) {
+    p, ul li,.subtitulo,td{
+        font-size: 1.7em;
+    }
+
+    h2{
+        font-size: 2.5em; 
+    }
+    h3{
+        font-size: 2em;  
+    }
+  
+    h1{
+        padding-bottom: 5em;
+    }
+
+    .posicao{
+        position: absolute;
+        top: 110em;
+        left: 10em;
+       }
+
+       .posicao02{
+       display: none;
+     }
+}
+@media (max-width: 657px) {
   
       .posicao02, .posicao03, .posicao04{
         display: none;
@@ -149,46 +191,49 @@ footer div{
     height: 228px;
    }
 
-   .table{
-    width: 25em;
+    .table{
+        width: 25em;
+    }
 }
 
-.contato img {
-    width:90px;
-}
-
- 
-}
-
-@media (max-width: 458px) {
-  figure .img{ 
-      position: absolute;
-      top: 20em;
+@media (max-width:540px) {
+  
+    .posicao{
+      display: none;
   }
-
-  .posicao{
- 
-  left: 1em;
- }
-
- .table{
-  width: 20em;
 }
 
-.contato img {
-  width:50px;
+    
+@media (max-width: 458px) {
+
+    main{
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+    h1{
+        font-size: 2em;
+        padding-bottom: 4em;
+    }
+
+    .posicao{
+        display: none;
+    }
+
+    .table{
+    width: 18em;
+    }
+
+    .contato img {
+    width:50px;
+    }
 }
 
+@media (max-width: 320px) {
+
+    .table{
+    width: 17em;
+    }
 
 }
-
-
-
-
-
-
-
-
-
-
 
