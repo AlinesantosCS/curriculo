@@ -4,10 +4,11 @@
     padding: 0; 
 }
 
-/* .card, .img{
-    width: 800px;
+.card, .img{
+    
    margin-left: 9em;
-} */
+   margin-bottom: 15em;
+}
 .rounded-circle{
     width: 300px;
 }
